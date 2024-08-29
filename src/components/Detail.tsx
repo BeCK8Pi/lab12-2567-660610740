@@ -10,8 +10,7 @@ export const Detail = () => {
       <p className="text-center" style={{ color: theme.fgColor }}>
         {/* tip: Get information from "theme" variable to determine 
     which theme is currently selected */}
-        {theme.name==="light"&&lang.detail.lightActivated}
-        {theme.name==="dark"&&lang.detail.darkActivated}
+        {theme.name==="light"?lang.detail.lightActivated:lang.detail.darkActivated}
       </p>
     </div>
   );
